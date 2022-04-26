@@ -203,6 +203,8 @@ export default function Stories() {
           backgroundColor: "#fff",
           mt: 10,
           position: "relative",
+          mb: 2,
+          pb: 1,
         }}
       >
         <img src="/garden.png" alt="none" width={"100%"} height="150px" />
@@ -298,7 +300,7 @@ export default function Stories() {
             backgroundColor: "#FED372",
             position: "absolute",
             right: -120,
-            bottom: 60,
+            bottom: 80,
           }}
         ></Box>
       </Box>
