@@ -24,6 +24,7 @@ export default function MainPage() {
           sx={{
             fontSize: width > 650 ? "67px" : 40,
             color: "#fff",
+            lineHeight: 1.2,
           }}
         >
           ВСЕ ДЛЯ ТЕПЛИЦ

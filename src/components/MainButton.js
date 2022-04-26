@@ -9,6 +9,7 @@ export default function MainButton({ text, sx }) {
         color: "white",
         fontSize: "18px",
         mx: 2,
+        display: "block",
         ...sx,
       }}
     >

@@ -1,3 +1,4 @@
+import { Box, CircularProgress } from "@mui/material";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 
@@ -7,5 +8,16 @@ export default function Loading() {
   useEffect(() => {
     router.push("/home");
   }, []);
-  return <div>Loading</div>;
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        height: "100vh",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <CircularProgress />
+    </Box>
+  );
 }
