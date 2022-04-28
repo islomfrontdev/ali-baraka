@@ -117,6 +117,14 @@ export default function Header() {
               <FaTimes size={30} />
             </Button>
             <MainButton
+              text={"home"}
+              sx={{
+                color: "#000",
+                mx: "auto",
+              }}
+              to={"/home"}
+            />
+            <MainButton
               text={"products"}
               sx={{
                 color: "#000",
