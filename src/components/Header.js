@@ -45,6 +45,7 @@ export default function Header() {
                     alignItems: "center",
                   }}
                 >
+                  <MainButton text={"Home"} to="/home" />
                   <MainButton text={"products"} to="/products" />
                   <MainButton text={"f.a.q"} to="/questions" />
                   <MainButton

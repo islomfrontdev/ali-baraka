@@ -53,6 +53,15 @@ export default function Stories({ stories }) {
     <div>
       <Header />
       <Container>
+        <Typography
+          sx={{
+            fontSize: 50,
+            fontWeight: "bold",
+            mt: 2,
+          }}
+        >
+          BLOG
+        </Typography>
         <Grid
           container
           spacing={2}
