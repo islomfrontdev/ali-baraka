@@ -5,9 +5,11 @@ import MainButton from "./MainButton";
 import MainPage from "./MainPage";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
+import { useRouter } from "next/router";
 export default function Header() {
   const { width } = useWindowDimensions();
   const [sidebar, setSidebar] = useState(false);
+  const router = useRouter();
   useEffect(() => {
     if (width > 880) {
       setSidebar(false);
@@ -28,6 +30,7 @@ export default function Header() {
               }}
             >
               <Button
+                onClick={() => router.push("/home")}
                 sx={{
                   m: 0,
                   p: 0,
@@ -42,14 +45,14 @@ export default function Header() {
                     alignItems: "center",
                   }}
                 >
-                  <MainButton text={"products"} />
-                  <MainButton text={"about us"} />
-                  <MainButton text={"blog"} />
+                  <MainButton text={"products"} to="/products" />
+                  <MainButton text={"f.a.q"} to="/questions" />
                   <MainButton
-                    text={"Contact"}
+                    text={"blog"}
                     sx={{
                       mr: 15,
                     }}
+                    to="/stories"
                   />
                   <Button>
                     <img src="/tel.png" />
@@ -118,27 +121,24 @@ export default function Header() {
                 color: "#000",
                 mx: "auto",
               }}
+              to={"/products"}
             />
-            <MainButton
-              text={"about us"}
-              sx={{
-                color: "#000",
-                mx: "auto",
-              }}
-            />
+
             <MainButton
               text={"blog"}
               sx={{
                 color: "#000",
                 mx: "auto",
               }}
+              to="/stories"
             />
             <MainButton
-              text={"Contact"}
+              text={"F.A.Q"}
               sx={{
                 color: "#000",
                 mx: "auto",
               }}
+              to="/questions"
             />
             <Box sx={{ textAlign: "center" }}>
               <Button sx={{ mx: "auto", ml: "auto" }}>
