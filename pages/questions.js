@@ -106,7 +106,7 @@ export default function Questions({ questions }) {
             </Typography>
             <Divider />
             {questions.map((q) => (
-              <Box>
+              <Box key={q.id}>
                 <Typography
                   sx={{
                     color: "primary.main",
